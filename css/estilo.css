@@ -38,6 +38,10 @@ h2{
     margin-top: 10px;
 
 }
+h1{
+font-size: 50px;
+
+}
 h3{
     
     font-size: 25px;
@@ -50,8 +54,7 @@ p{
 }
 .tituloFrase{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
     color: orange;
     align-content: center;
 }
@@ -92,7 +95,23 @@ p{
     position: fixed;
     left: 1250px;
     top: 450px;
-    background-color: yellowgreen;
+    color:white;
+    height: 150px;
+    width: 150px;
+    
+    background-image: linear-gradient(to right, green, rgba(0, 128, 0, 0.212));
+}
+.botonWhatsapp a{
+    
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: white;
+
+
+}
+.botonWhatsapp a h4{
+    margin-top: 65px;
+    margin-left: 45px;
 }
 
 .formularioDeContacto{
@@ -207,11 +226,18 @@ footer{
     justify-content: space-between;
     margin-left: 1%;
     margin-bottom: 15px;
+    align-items: center;
 
 }
 .bannerIndex img{
-    width:100%;
+    width:70%;
     height: 80%;
+    transition: all 2s;
+
+
+}
+.bannerIndex img:hover{
+    transform: scale(1.1, 1.1);
 }
 .bannerIndex h2{
     align-items: center;
@@ -230,11 +256,18 @@ align-items: center;
     justify-content: space-evenly;
     margin-left: 1%;
     align-items: center;
+    align-content: center;
 }
-.destacados img{
-    width: 100%;
+.destacados a{
+    width: 90%;
     height: 85%;
     
+}
+
+.destacados a img{
+    width: 85%;
+    height: 85%;
+
 }
 .nuestroProyecto{
     grid-area: imagen2;
@@ -243,12 +276,19 @@ align-items: center;
     justify-content: space-evenly;
     align-items: center;
     margin-right: 1%;
+    align-content: center;
    
 }
-.nuestroProyecto img{
-    width: 100%;
+.nuestroProyecto a{
+    width: 90%;
     height: 85%;
 }
+.nuestroProyecto a img{
+    width: 85%;
+    height: 85%;
+
+}
+
 .sucursales{
     grid-area: imagen3;
     display: flex;
@@ -256,13 +296,21 @@ align-items: center;
     justify-content: space-evenly;
     margin-left: 1%;
     align-items: center;
+    align-content: center;
 
 }
 
-.sucursales img{
-    width: 100%;
+.sucursales a{
+    width: 90%;
     height: 85%;
 }
+.sucursales a img{
+    width: 85%;
+    height: 85%;
+
+}
+
+
 .elEspecial{
     grid-area: imagen4;
     display: flex;
@@ -270,10 +318,18 @@ align-items: center;
     justify-content: space-evenly;
     align-items: center;
     margin-right: 1%;
+    align-content: center;
+    
 }
-.elEspecial img{
-    width: 100%;
+.elEspecial a{
+    width: 90%;
     height: 85%;
+
+}
+.elEspecial a img{
+    width: 85%;
+    height: 85%;
+
 }
 
 .footerIndex{
@@ -614,22 +670,40 @@ align-items: center;
 }
 .oferta1{
     grid-area: imagenoferta1;
+    background-image: linear-gradient(to left, orange, yellow);
+   
+    
 }
-.oferta1 a img{
-    width: 100%;
+
+
+.oferta1 img{
+    width: 75%;
+    height: 75%;
+    margin-top: 50px;
+    margin-left: 150px;
 }
 .oferta2{
     grid-area: imagenoferta2;
+    background-image: linear-gradient(to left, orange, yellow);
 }
 .oferta2 img{
-    width: 100%;
+    width: 75%;
+    height: 75%;
+    margin-top: 50px;
+    margin-left: 150px;
 }
 
 .oferta3{
     grid-area: imagenoferta3;
+    background-image: linear-gradient(to left, orange, yellow);
+    
 }
 .oferta3 img{
-    width: 100%;
+    width: 75%;
+    height: 75%;
+    margin-top: 50px;
+    margin-left: 150px;
+    
 }
 
 .footerOferta{
@@ -735,6 +809,10 @@ color: orange;
     grid-area: formulariocontacto;
     align-content: center;
 
+}
+
+.formularioContacto form{
+    margin-left: 200px;
 }
 
 .footerContacto{
