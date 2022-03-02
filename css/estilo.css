@@ -12,7 +12,8 @@ body{
 
  
 nav{   
-    background-color: orange
+    background-color: orange;
+    
 
 }
 
@@ -57,6 +58,7 @@ p{
     flex-direction: column;    
     color: orange;
     align-content: center;
+    height: 80%;
 }
 .frase{
     
@@ -114,19 +116,7 @@ p{
     margin-left: 45px;
 }
 
-.formularioDeContacto{
-    color: orange;
-    font-style: italic;
-    text-align: left;
-    font-size: xx-large;
-   
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  
 
-}
 
 
 
@@ -812,6 +802,19 @@ color: orange;
 
 .formularioContacto form{
     margin-left: 100px;
+    color: orange;
+    font-style: italic;
+    text-align: left;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formularioDeContacto{
+    
+  
+
 }
 
 .footerContacto{
@@ -945,7 +948,7 @@ color: orange;
     .grillaindex{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 170px 120px 310px 300px 300px 300px 300px 100px;
+        grid-template-rows: 300px 150px 310px 300px 300px 300px 300px 100px;
         grid-template-areas: "header"
         "nav"
         "banner"
@@ -960,7 +963,7 @@ color: orange;
                 
     }
     .card_body{
-        visibility: hidden;
+        display: none;
     }
 
     .headerIndex{
@@ -974,15 +977,13 @@ color: orange;
     }
     .headerIndex img{
         width: 20%;
-        margin-top: 60px;
-        
-
-    }
+        margin-top: 80px;
+        }
 
     .tituloFrase{
         display: flex;
         flex-direction: column;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
         align-content: center;
     }
     .navIndex{
@@ -1020,7 +1021,7 @@ color: orange;
  .grilla_productos{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 170px 120px 150px 200px 200px 200px 200px 200px 200PX 200px 200px 200px 100px;
+    grid-template-rows:  300px 150px 200px 200px 200px 200px 200PX 200px 200px 200px 100px;
     grid-template-areas: "headerp"
     "navp"
     "titulop"
@@ -1226,7 +1227,7 @@ color: orange;
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 170px 120px 150px 300px 300px 300px 100px;
+    grid-template-rows: 300px 150px 150px 300px 300px 300px 100px;
     grid-template-areas: "headeroferta"
     "navoferta"
     "titulooferta"
@@ -1335,7 +1336,7 @@ color: orange;
 .grilla_contacto {    
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 170px 120px 150px 600px 100px;
+    grid-template-rows: 300px 150px  150px 600px 100px;
     grid-template-areas: "headercontacto"
                         "navcontacto"
                         "titulocontacto"
@@ -1349,7 +1350,7 @@ color: orange;
      grid-area: headercontacto;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width:;
     align-items: center;
     justify-content:center;
 }
@@ -1396,19 +1397,18 @@ color: orange;
 }
 
 .formularioContacto form{
-    
-    width: 80%;
+    margin-left: 100px;
+    color: orange;
+    font-style: italic;
+    text-align: left;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
     height: 80%;
-    
- 
+    width: 80%;
     
 }
-.formularioDeContacto{
-    justify-items: center;
-    margin-left: 1%;
 
-
-}
 
 .tituloContacto{
     grid-area: titulocontacto;
@@ -1425,7 +1425,7 @@ color: orange;
 .grillasomos{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 170px 120px 150px 800px 100px;
+    grid-template-rows: 300px 150px 150px 800px 100px;
     grid-template-areas: "headersomos"
     "navsomos"
     "titulosomos"
