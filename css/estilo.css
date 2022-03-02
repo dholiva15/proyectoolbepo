@@ -119,9 +119,8 @@ p{
     font-style: italic;
     text-align: left;
     font-size: xx-large;
-    position:absolute;
-    top: 350px;
-    left: 100px;
+   
+   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -812,7 +811,7 @@ color: orange;
 }
 
 .formularioContacto form{
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 .footerContacto{
@@ -920,7 +919,10 @@ color: orange;
     width: 95%;
 }
 .quienesSomos img{
-    width: 100%;
+    width: 70%;
+    height: 70%;
+    margin-left: 15px;
+
 
 }
 
@@ -938,6 +940,7 @@ color: orange;
 /* MEDIA QUERY INDEX*/
 
 @media screen and (max-width: 600px) {
+    /* Media QUERY INDEx*/
 
     .grillaindex{
         display: grid;
@@ -965,7 +968,7 @@ color: orange;
         display: flex;
         flex-direction: column;
         width: 100%;
-      align-items: center;
+        align-items: center;
         justify-content:center;
         
     }
@@ -1006,10 +1009,494 @@ color: orange;
     
  .bannerIndex{
      margin-bottom: 10px;
- }
+    }
 .destacados{
     margin-top: 4%;
+     }
+
+
+     /* Productos y Pinturas___*/
+    
+ .grilla_productos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 170px 120px 150px 200px 200px 200px 200px 200px 200PX 200px 200px 200px 100px;
+    grid-template-areas: "headerp"
+    "navp"
+    "titulop"
+    "producto1" 
+    "producto2" 
+    "producto3"
+    "producto4"
+    "producto5" 
+    "producto6"
+    "producto7" 
+    "producto8"
+    "producto9"
+    "footerp";
+   
 }
+
+.headerProductos{
+    grid-area: headerp;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content:center;
+        
+}
+
+
+.headerProductos img{
+    width: 20%;
+    margin-top: 60px;
+    
+}
+
+
+
+.navProductos{
+    grid-area: navp;
+    
+}
+
+.navProductos ul{
+    list-style-type: none ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    font-size: small;
+    font-weight: bolder;
+    margin-top: 10px;
+
+
+}
+    
+    
+
+.navProductos ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navProductos ul li a:hover{
+    color: black;
+}
+
+
+
+.tituloProductos{
+    grid-area:titulop;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+
+}
+
+
+
+
+.producto1{
+    grid-area: producto1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+    margin-bottom: 10px;
+}
+
+.producto1 img{
+    width: 80%;
+    height: 80%;
+}
+
+
+.producto2{
+    grid-area: producto2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-bottom: 10px;
+}
+.producto2 img{
+    width: 80%;
+    height: 80%;
+}
+
+.producto3{
+    grid-area: producto3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-bottom: 10px;
+}
+.producto3 img{
+    width: 80%;
+    height: 80%;
+}
+.producto4{
+    grid-area: producto4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-bottom: 10px;
+}
+.producto4 img{
+    width: 80%;
+    height: 80%;
+}
+.producto5{
+    grid-area: producto5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-bottom: 10px;
+}
+.producto5 img{
+    width: 80%;
+    height: 80%;
+}
+.producto6{
+    grid-area: producto6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-bottom: 10px;
+}
+.producto6 img{
+    width: 80%;
+    height: 80%;
+}
+.producto7{
+    grid-area: producto7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+    margin-bottom: 10px;
+}
+.producto7 img{
+    width: 80%;
+    height: 80%;
+}
+.producto8{
+    grid-area: producto8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-bottom: 10px;
+}
+.producto8 img{
+    width: 80%;
+    height: 80%;
+}
+.producto9{
+    grid-area: producto9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-bottom: 10px;
+}
+.producto9 img{
+    width: 80%;
+    height: 80%;
+}
+/* OFERTAS*/
+
+.grilla_ofertas{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 170px 120px 150px 300px 300px 300px 100px;
+    grid-template-areas: "headeroferta"
+    "navoferta"
+    "titulooferta"
+    "imagenoferta1"
+    "imagenoferta2"
+    "imagenoferta3"
+    "footeroferta";
+    column-gap: 5%;
+    row-gap: 1%;
+
+
+}
+
+.headerOfertas{
+    grid-area: headeroferta;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.headerOfertas img{
+    width: 20%;
+    margin-top: 60px;
+}
+
+.headerOfertas form{
+   
+    margin-top: 8px;
+    color: orange;
+    font-size: 7px;
+    margin-right: 1%;
+       
+}
+
+.navOfertas{
+    grid-area: navoferta;
+    
+}
+
+.navOfertas ul{
+
+    list-style-type: none ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    font-size: small;
+    font-weight: bolder;
+    margin-top: 10px;
+
+}
+
+
+.tituloOfertas{
+    grid-area: titulooferta;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    color: orange;
+}
+.oferta1{
+    grid-area: imagenoferta1;
+    background-image: linear-gradient(to left, orange, yellow);
+   
+    
+}
+
+.oferta1 img{
+    width: 65%;
+    height: 65%;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+.oferta2{
+    grid-area: imagenoferta2;
+    background-image: linear-gradient(to left, orange, yellow);
+}
+.oferta2 img{
+    width: 65%;
+    height: 65%;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+.oferta3{
+    grid-area: imagenoferta3;
+    background-image: linear-gradient(to left, orange, yellow);
+    
+}
+.oferta3 img{
+    width: 65%;
+    height: 65%;
+    margin-top: 40px;
+    margin-left: 150px;
+    
+}
+
+
+
+/*Contacto*/
+
+.grilla_contacto {    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 170px 120px 150px 600px 100px;
+    grid-template-areas: "headercontacto"
+                        "navcontacto"
+                        "titulocontacto"
+                        "formulariocontacto"
+                        "footercontacto";
+    column-gap: 5%;
+    row-gap: 1%;
+}
+
+.headerContacto{
+     grid-area: headercontacto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.headerContacto img{
+    width: 20%;
+    margin-top: 60px;
+
+}
+
+
+
+
+.navContacto{
+grid-area: navcontacto
+
+}
+
+.navContacto ul{
+    list-style-type: none ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: small;
+    font-weight: bolder;
+    margin-top: 10px;
+
+}
+
+.tituloContacto{
+grid-area: titulocontacto;
+display: flex;
+flex-direction: column;
+align-content: space-between;
+align-items: center;
+color: orange;
+}
+
+.formularioContacto{
+    grid-area: formulariocontacto;
+    align-content: center;
+
+}
+
+.formularioContacto form{
+    
+    width: 80%;
+    height: 80%;
+    
+ 
+    
+}
+.formularioDeContacto{
+    justify-items: center;
+    margin-left: 1%;
+
+
+}
+
+.tituloContacto{
+    grid-area: titulocontacto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    color: orange;
+    margin-bottom: 25px;
+    }
+
+/*Quienes SOMOS*/
+
+.grillasomos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 170px 120px 150px 800px 100px;
+    grid-template-areas: "headersomos"
+    "navsomos"
+    "titulosomos"
+    "somos"    
+    "footersomos";
+    column-gap: 5%;
+    row-gap: 1%;
+           
+}
+
+.headerSomos{
+    grid-area: headersomos;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content:center;
+}
+
+.headerSomos img{
+    width: 20%;
+    margin-top: 60px;
 
     
 }
+
+
+.navSomos{
+    grid-area: navsomos;
+
+}
+
+.navSomos ul{
+    list-style-type: none ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: small;
+    font-weight: bolder;
+    margin-top: 10px;
+
+}
+
+    
+
+
+.quienesSomos{
+    grid-area: somos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.quienesSomos p{
+        width: 85%;
+        margin-left: 50px;
+        margin-right: 20px;
+}
+.quienesSomos img{
+    width: 85%;
+    height: 85%;
+    margin-left: 50px;
+    margin-right: 20px;
+
+}
+
+
+
+
+
+
+
+     }
+
