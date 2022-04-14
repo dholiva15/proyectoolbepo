@@ -1,0 +1,34 @@
+$mainColor: rgba(255, 0, 0, 0.678);
+
+
+.titulo{
+    font-family: 'Roboto', sans-serif;
+    color: $mainColor;
+    text-align: center;    
+}
+
+.titulo_olbepo{
+    @extend .titulo;
+    font-size: 45px;
+    font-weight: bold;
+
+
+}
+
+.titulo_olbepo1{
+    @extend .titulo;
+    font-size: small;
+    font-style: italic;
+}
+.titulo_index{
+    @extend .titulo;
+    font-size: 20px;
+    font-style: oblique;
+
+}
+
+.imagen_nav{
+    width: 50%;
+    height: 50%;
+    margin-top: 3%;
+}

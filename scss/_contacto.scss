@@ -1,0 +1,64 @@
+
+
+/*ICONOS*/
+.iconos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bi-facebook{
+    font-size: 45px;
+    color: blue;
+}
+.bi-whatsapp{
+    font-size: 45px;
+    color: green;
+}
+.bi-twitter{
+    font-size: 45px;
+    color: lightblue;
+}
+.bi-youtube{
+    font-size: 45px;
+    color: red;
+}
+.bi-whatsapp:hover{
+    color: greenyellow;
+}
+.bi-twitter:hover{
+    color: hotpink;
+}
+.bi-facebook:hover{
+    color: lavender;
+}
+.bi-youtube:hover{
+    color: grey;
+}
+
+
+.botonWhatsapp{
+    position: fixed;
+    left: 95%;
+    top: 600px;
+    
+    height: 150px;
+    width: 150px;
+    
+    
+}
+.botonWhatsapp a{
+    
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: white;
+
+
+}
+.botonWhatsapp a h4{
+    margin-top: 65px;
+    margin-left: 45px;
+}
+
+
