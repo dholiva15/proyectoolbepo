@@ -1,0 +1,90 @@
+.perro{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 90px 150px 800px 120px;
+    grid-template-areas: "headerperro1 headerperro2"
+    "navbar navbar"
+    "perromain perromain"
+    "footer footer";
+}
+
+.headerperro1{
+    grid-area: headerperro1;
+}
+
+.headerperro2{
+    grid-area: headerperro2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    font-size: 50px;
+    color: $mainColor;    
+}
+.navbar{
+    grid-area: navbar;
+}
+.perromain{
+    grid-area: perromain;
+    margin-left: 20%;
+    margin-top: 15%;
+
+    & img{
+        width: 95;
+        height: 95%;
+    }
+}
+
+
+footer{
+        grid-area: footer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    @media screen and (max-width:768px){
+    
+        .perro{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 90px 90px 100px 750px 120px;
+            grid-template-areas: "headerperro1" 
+            "headerperro2"
+            "navbar"
+            "perromain"
+              "footer";
+        
+        }
+    
+        .headerperro1{
+            grid-area: headerperro1;
+        }
+        .headerperro2{
+            grid-area: headerperro2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            font-size: 20px;
+            color: $mainColor;   
+        }
+        .navbar{
+            grid-area: navbar;
+        }
+    
+        .perromain{
+            grid-area:perromain;
+        }
+        .imagenpromo2{
+            grid-area: imagenpromo2;}
+       
+        footer{
+            grid-area: footer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }

@@ -4,7 +4,8 @@ $mainColor: rgba(255, 0, 0, 0.678);
 .titulo{
     font-family: 'Roboto', sans-serif;
     color: $mainColor;
-    text-align: center;    
+    text-align: center; 
+       
 }
 
 .titulo_olbepo{
@@ -32,3 +33,47 @@ $mainColor: rgba(255, 0, 0, 0.678);
     height: 50%;
     margin-top: 3%;
 }
+.adopta{
+  @extend .titulo;
+  font: 25px;
+  font-style: oblique;
+  align-items: center;
+}
+/*aplicamos MIXIN en Asesoramiento, Ofertas*/ 
+
+@mixin estilo_card ($colorLetra, $colorFondo, $tamanioLetra) {
+
+    font-size: $tamanioLetra;
+    text-align: center;   
+    font-family: 'Boogaloo', cursive;
+    color: $colorLetra;
+    background-color: $colorFondo;
+  }
+  
+  .card1{
+  
+    @include estilo_card( white, blue, 20px);
+  }
+  
+  .card2{
+    @include estilo_card(white,red, 20px )
+  }
+  
+  .card3{ 
+    @include estilo_card(rgb(255, 238, 0),rgba(255, 0, 140, 0.623) , 20px )
+  }
+
+  .card4{
+      @include estilo_card(blue,white ,17px )
+  }
+  
+  .contactotitulo{
+    @include estilo_card(green,$mainColor , 25px )
+  }
+  .contactoformulario{
+    @include estilo_card($mainColor, white, 35px )
+  }
+
+  .colornav{
+    color: indigo;
+  }
